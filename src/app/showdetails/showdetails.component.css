@@ -1,0 +1,18 @@
+.card-view{
+    display: flex;
+    margin-top: 2rem;
+    border-style: solid;
+    
+}
+.card-view img{
+    border-radius: 50%;
+    width: 15%;
+    padding: 1rem;
+}
+.card-view p{
+    padding-left: 2rem;
+    
+    padding-top: 3rem;
+}
+
+

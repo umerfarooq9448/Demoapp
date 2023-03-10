@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; text-align: center; align-items: center; justify-content: space-between;">
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://th.bing.com/th/id/OIP.xUVeHfMXa4DdeQanzTzl1gHaEK?w=313&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://th.bing.com/th/id/R.4db8527da09487664f0899b2251b7871?rik=DSKcEP3dYAmWTQ&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2014%2f01%2f27%2ffree-desktop-background_071551853_19.jpg&ehk=g3MCxDNWTHD%2bT6bVFTDPNoBQB0%2b9q6qlAzhx03YbekM%3d&risl=&pid=ImgRaw&r=0" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://th.bing.com/th/id/R.4db8527da09487664f0899b2251b7871?rik=DSKcEP3dYAmWTQ&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2014%2f01%2f27%2ffree-desktop-background_071551853_19.jpg&ehk=g3MCxDNWTHD%2bT6bVFTDPNoBQB0%2b9q6qlAzhx03YbekM%3d&risl=&pid=ImgRaw&r=0" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div style="background-color: ghostwhite; padding: 2rem; margin-top: 2rem;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo facilis quis eius ipsam! Dignissimos atque harum mollitia autem aspernatur accusamus recusandae vel molestias enim omnis facilis natus voluptatem totam impedit, provident tenetur tempore expedita architecto numquam quas excepturi voluptas consequatur nesciunt! Esse, at voluptas! Minus quaerat cum odit molestiae?</p>
+    </div>
+    <div>
+       
+        <div class="card-view">
+            
+                <img src="https://th.bing.com/th/id/OIP.Xm1EXmPOVQQajFrYh3F_WAHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="img">
+            
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, modi! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+             
+          </div>
+    </div>
+    <div>
+       
+        <div class="card-view">
+            
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, modi! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <img src="https://th.bing.com/th/id/OIP.Xm1EXmPOVQQajFrYh3F_WAHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="img">
+             
+          </div>
+    </div>
+  
+    
+  <div style="margin-top: 3rem; padding-left: auto;  " >
+    <h1 style="padding-left: 45%;">Our Developers</h1>
+    <div style="align-items: center;padding-top: 2rem;">
+      <table >
+        
+        <td *ngFor="let x of dummydata" style="padding-left: 7rem; ">
+         
+          <div class="card" style="width: 18rem; ">
+            <img class="card-img-top" [src]=x.image alt="Card image cap" style="height: 15rem;" >
+            <div class="card-body">
+              <h2 class="card-title" appCustom>{{x.name}}</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+          
+    
+    
+        </td>
+    
+      </table> 
+
+    </div>
+    <!-- <div>
+      <form #addMovie="ngForm" (ngSubmit)="addMoviefunc(addMovie)">
+        <div class="form-group"> 
+          <label >Email address</label>
+          <input type="text" class="form-control" id="movieName" [(ngModel)]="movie.movieName" aria-describedby="moveiName" placeholder="Enter Movie Name">
+          
+        </div>
+        <div class="form-group">
+          <label>Movie Type</label>
+          <input type="text" class="form-control" id="addMovieType" [(ngModel)]="movie.movieType" placeholder="Enter type">
+        </div>
+        <div class="form-group">
+          <label >Rating</label>
+          <input type="number" class="form-control" id="addMovieRating" [(ngModel)]="movie.movieRating" placeholder="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div> -->
+
+  </div>
+</body>
+</html>

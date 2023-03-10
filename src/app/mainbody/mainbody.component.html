@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="padding-left: 2rem;">
+
+
+    <div class="cards-view">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{city}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{displaycity()}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="comments">
+      <div class="card">
+        <div class="card-header">
+          Quote
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Quote
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          Quote
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" name="email" ngModel id="inputEmail4" placeholder="Email">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 2rem;">Sign in</button>
+
+          </div>
+
+        </div>
+      </form>
+      <div>
+        <p>{{newemail}}</p>
+
+      </div>
+
+
+
+    </div>
+
+    <div class=" myform">
+      <h1>Enter the details</h1>
+      <form>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Female
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
+                  [disabled]="isDisabled">
+                <label class="form-check-label" for="gridRadios3">
+                  Cant Specify
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group row">
+          <div class="col-sm-2">Checkbox</div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Sports
+              </label>
+
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Painting
+              </label>
+
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1" [checked]="isChecked"
+                [disabled]="isDisabled">
+              <label class="form-check-label" for="gridCheck1">
+                Coding
+              </label>
+
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Reading
+              </label>
+
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <a routerLink="/showdetailscomp">Click here</a>
+
+    </div>
+    <div>
+      <input [(ngModel)]="nameofperson">
+      {{nameofperson}}
+    </div>
+
+  
+  <div style="margin-top: 2rem;">
+    <div class="form-check disabled">
+      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+      <label class="form-check-label" for="gridRadios3">
+        Yes
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+      <label class="form-check-label" for="gridRadios3">
+        No
+      </label>
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--this is an example for ngif-->
+  <div *ngIf="condition;else elseBlock">true.</div>
+  <ng-template #elseBlock>false</ng-template>
+
+
+
+  <!--Example 2-->
+  <div style="padding-top: 3rem;">
+    <div *ngIf="empData; else empElseBlock">
+      {{empData}}
+    </div>
+    <ng-template #empElseBlock>
+      Empty employee data
+    </ng-template>
+    <div *ngIf="empSalary; else salaryElseBlock">
+      {{empSalary}}
+
+    </div>
+    <ng-template #salaryElseBlock>
+      empty salary data
+    </ng-template>
+  </div>
+
+  <div style="padding-top: 3rem;">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" (click)="checked()"
+        value="option2">
+      <label class="form-check-label" for="gridRadios2">
+        Dell
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" (click)="checked()"
+        value="option3">
+      <label class="form-check-label" for="gridRadios3">
+        Ey
+      </label>
+    </div>
+
+<!--Example 3-->
+  </div>
+  <div style="padding-top: 3rem;">
+    <div *ngIf="value; else empElseBlock">
+
+    </div>
+    <ng-template #empElseBlock>
+      Empty employee data
+    </ng-template>
+    <div *ngIf="value; else salaryElseBlock">
+      {{empSalary}}
+
+    </div>
+    <ng-template #salaryElseBlock>
+      empty salary data
+    </ng-template>
+  </div>
+  <div>
+
+    <label>
+      <input type="radio" name="option" [(ngModel)]="selectedOption" [value]="'ey'" *ngIf="!option2">EY
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="option" [(ngModel)]="selectedOption" [value]="'Dell'" *ngIf="!option1">DELL
+    </label>
+    <br>
+    <button (click)="submit()">Submit</button>
+    
+  </div>
+  <div>
+    {{selectedOption}}
+  </div>
+
+<!--Example for *ngFor-->
+
+
+<div style="padding-top: 3rem;">
+  <p *ngFor="let x of data">
+    Student {{x}}
+  </p>
+</div>
+
+<div style="padding-top: 3rem;">
+  <ul>
+
+  
+  <li *ngFor="let x of newdata">
+    
+    {{x.Name}}-- {{x.Salary}}
+  </li>
+</ul>
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+   <!--Example for pipes-->
+
+<div style="padding-top: 3rem;">
+ 
+  <h1><u>Example of pipe</u></h1>
+<h1>{{name|uppercase}}</h1>
+<h1>{{name|lowercase}}</h1>
+<h1>{{name|titlecase}}</h1>
+<br>
+
+<h1>{{todayDate|date:'M/d/y'}}</h1>
+<h1>{{todayDate|date:'fullDate'}}</h1>
+
+<br>
+<h1>{{month|slice:1:3}}</h1>
+<h1>{{str|slice:1:3}}</h1>
+
+<h1>{{price|currency: 'USD'}}</h1>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  
+
+
+
+</div>
+
+
+
+
+
+
+  
+
+</body>
+
+
+</html>

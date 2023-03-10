@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sticky1-navbar{
+
+    
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+   
+    
+}
+
+.cards-view{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.comments{
+    margin-top: 2rem;
+
+}
+
+.cards-view .card-title{
+    color: brown;
+  }
+ 
+.card-header{
+    color: #007bff;
+}
+
+.car-body footer{
+    color: brown;
+}
+
